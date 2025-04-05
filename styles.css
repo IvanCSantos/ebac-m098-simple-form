@@ -1,0 +1,90 @@
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  margin: 0 auto;
+  height: calc(100vh - 40px);
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 600px;
+  background-color: #f1efec;
+}
+
+.container h1 {
+  font-size: 2.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #183b4e;
+  margin: 20px 0;
+  padding: 20px 40px;
+  gap: 50px;
+}
+
+.form-section {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section:nth-child(1)::after {
+  content: "";
+  margin-top: 50px;
+  border-bottom: 1px dotted #183b4e;
+}
+
+.form-section h2 {
+  margin-bottom: 16px;
+  font-size: 2rem;
+}
+
+.form-section div {
+  margin: 10px 0;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-section label,
+.form-section input {
+  font-size: 1rem;
+}
+
+.form-section div input {
+  min-width: 25ch;
+  height: 25px;
+  padding: 2px 5px;
+}
+
+.container-botoes {
+  align-self: flex-end;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 15px 25px;
+  border: none;
+  background-color: #183b4e;
+  border-radius: 6px;
+  color: #fdfaf6;
+  cursor: pointer;
+}
+
+.clean {
+  color: #fdfaf6;
+  background-color: #7a644c;
+}
